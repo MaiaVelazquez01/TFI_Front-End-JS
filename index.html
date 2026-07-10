@@ -16,7 +16,42 @@
 <body>
     <header></header>
     <nav></nav>
-    <main></main>
+    <main>
+         <section id="contact" class="contact">
+            <h2 class="contact-title">Contacto</h2>
+            <p class="contact-txt">ESTAMOS AQUÍ PARA AYUDARTE</p>
+            <form action="https://formspree.io/f/mreonjkr" method="post" class="contact-form" autocomplete="off">
+                <div class="contact-form__row">
+                    <div class="contact-form__group">
+                        <label for="nombre">NOMBRE</label>
+                        <div class="contact-form__field">
+                            <i class="fa-regular fa-user"></i><input type="text" id="nombre" name="nombre"
+                                placeholder="Tu nombre">
+                        </div>
+                    </div>
+                    <div class="contact-form__group">
+                        <label for="correo">CORREO</label>
+                        <div class="contact-form__field">
+                            <i class="fa-regular fa-envelope"></i><input type="email" id="correo" name="correo"
+                                placeholder="tu@correo.com">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="contact-form__group">
+                    <label for="mensaje">MENSAJE</label>
+                    <div class="contact-form__field-textarea">
+                        <i class="fa-regular fa-comment"></i><textarea id="mensaje" name="mensaje"
+                            placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+                </div>
+                <br>
+                <button type="submit" class="contact-form__button">
+                    <i class="fa-regular fa-paper-plane"></i>ENVIAR
+                </button>
+            </form>
+        </section>
+    </main>
     <footer class="site-footer">
         <div class="site-footer__copyright">
             <p class="site-footer__copyright-title">AURELIE</p>

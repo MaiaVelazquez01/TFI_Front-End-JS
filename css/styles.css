@@ -10,6 +10,128 @@ html {
     width: 100%;
 }
 
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.contact-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    color: #1C1815;
+    text-align: center;
+}
+
+.contact-txt {
+    font-family: 'Poppins', serif;
+    font-size: 0.68rem;
+    color: #6e6355;
+    text-align: center;
+    padding: 10px 0px 20px;
+}
+
+.contact-form {
+    background-color: white;
+    border-radius: 12px;
+    width: 60%;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form__row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+}
+
+.contact-form__group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    flex: 1;
+    width: 100%
+}
+
+.contact-form__group label {
+    color: #6E6355;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+}
+
+.contact-form__field,
+.contact-form__field-textarea {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    border: 1px solid #e4dcc8;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f5f1e8;
+}
+
+.contact-form__field-textarea {
+    align-items: flex-start;
+    height: 5rem;
+}
+
+.contact-form__field i,
+.contact-form__field-textarea i {
+    color: #9a9082;
+    font-size: 0.65rem;
+}
+
+.contact-form__field input,
+.contact-form__field-textarea textarea {
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.6rem;
+    background-color: #f5f1e8;
+    width: 100%;
+}
+
+.contact-form__field-textarea textarea {
+    height: 100%;
+    border: none;
+    resize: none;
+}
+
+.contact-form__field input:focus,
+.contact-form__field-textarea textarea:focus {
+    outline: none;
+}
+
+.contact-form__field:focus-within,
+.contact-form__field-textarea:focus-within {
+    border: 1px solid #6E5A3A;
+}
+
+.contact-form__button {
+    background-color: #9c7b4f;
+    font-size: 0.6rem;
+    color: white;
+    border-radius: 5px;
+    padding: 0.5rem 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    letter-spacing: 2px;
+}
+
+.contact-form__button:hover {
+    transform: translateY(-5px);
+}
+
 .site-footer {
     background-color: #1C1815;
     padding: 2rem 2rem;;
