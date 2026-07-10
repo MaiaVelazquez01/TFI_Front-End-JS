@@ -10,6 +10,79 @@ html {
     width: 100%;
 }
 
+.reviews-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px 30px 0px 30px;
+    margin-bottom: 2rem;
+}
+
+.review-card {
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+.review-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review-top i {
+    color: #8c8573;
+    font-size: 20px;
+}
+
+.review-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 3px;
+    border: 2px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(135deg, #857d71, #9c641a) border-box;
+    display: flex;
+    align-items: center;
+}
+
+.review-info {
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    gap: 6px;
+    padding: 3px 5px 3px 15px;
+}
+
+.review-info hr {
+    width: 8%;
+    border-top: 2px solid #8c8573;
+}
+
+.review-name {
+    font-size: 0.78rem;
+    color: #262019;
+}
+
+.review-stars {
+    color: #9c7b4f;
+    font-size: 0.5rem;
+}
+
+.review-txt {
+    font-size: 0.7rem;
+    color: #6E6355;
+}
+
 .contact {
     display: flex;
     flex-direction: column;
@@ -17,7 +90,7 @@ html {
     margin-bottom: 2rem;
 }
 
-.contact-title {
+.reviews-title, .contact-title {
     font-family: 'Playfair Display', serif;
     font-size: 1.2rem;
     letter-spacing: 0.5px;
@@ -25,7 +98,7 @@ html {
     text-align: center;
 }
 
-.contact-txt {
+.reviews-txt, .contact-txt {
     font-family: 'Poppins', serif;
     font-size: 0.68rem;
     color: #6e6355;
