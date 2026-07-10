@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+    background-color: #F5F1E8;
+    width: 100%;
+}
+
+.site-footer {
+    background-color: #1C1815;
+    padding: 2rem 2rem;;
+}
+
+.site-footer__copyright {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 0.3rem;
+}
+
+.site-footer__copyright-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    color:  #F5F1E8;
+}
+
+.site-footer__copyright-txt {
+    font-family: 'Poppins', serif;
+    font-size: 0.75rem;
+    color: #9A9082;
+}
