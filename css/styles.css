@@ -10,6 +10,50 @@ html {
     width: 100%;
 }
 
+.home {
+    background-color: #1C1815;
+    margin-bottom: 2rem;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 30px;
+}
+
+.home-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    letter-spacing: 1.2px;
+    color: #F4EFE3;
+}
+
+.home-txt {
+    font-family: 'Poppins', serif;
+    font-size: 1rem;
+    color: #9A9082;
+}
+
+.home-button {
+    background-color: #9c7b4f;
+    font-size: 0.6rem;
+    color: white;
+    border-radius: 5px;
+    padding: 1rem 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
 .reviews-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -190,7 +234,7 @@ html {
     font-size: 0.6rem;
     color: white;
     border-radius: 5px;
-    padding: 0.5rem 3.5rem;
+    padding: 0.5rem 2.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
