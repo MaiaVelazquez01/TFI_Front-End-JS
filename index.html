@@ -24,14 +24,32 @@
                 <li><a href="#contact" class="navbar-list__link">CONTACTO</a></li>
             </ul>
         </nav>
-        <button class="header-button"><i class="fa-solid fa-cart-arrow-down"></i></button>
+        <button class="header-button" id="cart-button">
+            <i class="fa-solid fa-cart-arrow-down"></i>
+            <span id="cart-counter"></span>
+        </button>
     </header>
+    <div class="cart-container" id="cart-container">
+        <h3 class="cart-container-title">Carrito</h3>
+        <p id="cart-container-empty"></p>
+        <ul id="cart-container-list"></ul>
+        <div class="cart-container-buttons">
+            <button id="cart-button-clear">VACÍAR CARRITO</button>
+            <button id="cart-button-pay">INICIAR PAGO</button>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
     <main>
         <section id="home" class="home">
             <h1 class="home-title">Belleza en su forma más pura</h1>
             <p class="home-txt">Rutinas y fórmulas pensadas para realzar tu piel natural, elaboradas con ingredientes de
                 origen responsable.</p>
             <button class="home-button">VER COLLECIÓN</button>
+        </section>
+        <section id="products">
+            <h2 class="products-title">Productos destacados</h2>
+            <p class="products-txt">SELECCIONADOS PARA VOS</p>
+            <div class="products-container"></div>
         </section>
         <section id="reviews">
             <h2 class="reviews-title">Reseñas</h2>
