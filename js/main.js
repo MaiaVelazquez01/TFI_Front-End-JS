@@ -1,4 +1,4 @@
-const header = document.getElementById("header");
+var header = document.getElementById("header");
 
 window.addEventListener("scroll", function () {
     console.log(window.scrollY);
@@ -10,9 +10,9 @@ window.addEventListener("scroll", function () {
     }
 });
 
-const cartButton = document.getElementById("cart-button");
-const cartContainer = document.getElementById("cart-container");
-const overlay = document.getElementById("overlay");
+var cartButton = document.getElementById("cart-button");
+var cartContainer = document.getElementById("cart-container");
+var overlay = document.getElementById("overlay");
 
 cartButton.addEventListener("click", function() {
     cartContainer.classList.toggle("active");
@@ -110,4 +110,34 @@ clearBtn.addEventListener("click", clearCart);
 function clearCart() {
     localStorage.removeItem("cart");
     loadCart();
+}
+
+var cartCloseBtn = document.getElementById("cart-container-close");
+cartCloseBtn.addEventListener("click", closeCart);
+
+function closeCart() {
+    cartContainer.classList.remove("active");
+    overlay.classList.remove("active");
+}
+
+var hamburgerBtn = document.getElementById("navbar-hamburguer-menuBtn");
+hamburgerBtn.addEventListener("click", openMenu);
+
+var hamburguerMenu = document.getElementById("navbar-hamburguer-menu__display");
+
+function openMenu() {
+    hamburguerMenu.classList.toggle("active");
+}
+
+var menuCloseBtn = document.getElementById("navbar-hamburguer-menu-close");
+menuCloseBtn.addEventListener("click", closeMenu);
+
+function closeMenu() {
+    hamburguerMenu.classList.remove("active");
+}
+
+var menuLinks = document.getElementsByClassName("navbar-hamburguer-menu__link");
+
+for (var i = 0; i < menuLinks.length; i++) {
+    menuLinks[i].addEventListener("click", closeMenu);
 }
