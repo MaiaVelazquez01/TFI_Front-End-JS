@@ -154,7 +154,7 @@ html {
     font-family: 'Poppins', sans-serif;
     font-size: 0.8rem;
     list-style: none;
-    height: 70vh;
+    height: 60%;
 }
 
 .cart-container-buttons {
@@ -717,11 +717,6 @@ html {
         width: 100%;
         right: -100%;
     }
-
-    #cart-container-list {
-        padding-left: 2.5rem;
-    }
-
 
     .cart-container.active {
         right: 0;
